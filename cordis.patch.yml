@@ -1,0 +1,11 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+
+# ============ 二次元皮肤 anime-theme 挂载行 ============
+# 把浏览器插件 anime-theme 加入网页插件清单（官方通道，可随时删行卸载）。
+# 改颜色只需编辑 node_modules\anime-theme\lib\client.js 后按 F5；
+# 只有"新增/删除这一行"才需要重启 dsh web。
+- insert:
+    - id: ui-anime-theme
+      name: 'anime-theme'
