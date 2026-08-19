@@ -2,14 +2,14 @@
 # ============================================================
 #  Kaguya 液态玻璃皮肤 · 网络一键安装（macOS / Linux）
 #  由用户在终端粘贴的一条命令下载并执行：
-#    curl -fsSL https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.sh | bash
+#    curl -fsSL https://raw.githubusercontent.com/DaRin1403/Darin-Public-Workspace/main/install-oneline.sh | bash
 #  （国内网络可换用 jsdelivr 镜像：
-#    curl -fsSL https://cdn.jsdelivr.net/gh/zhangdu20080314/Darin-Public-Workspace@main/install-oneline.sh | bash）
+#    curl -fsSL https://cdn.jsdelivr.net/gh/DaRin1403/Darin-Public-Workspace@main/install-oneline.sh | bash）
 #  流程：下载最新仓库 zip → 解压到临时目录 → 执行仓库内「一键安装.sh」→ 清理。
 # ============================================================
 set -euo pipefail
 
-BASE="https://github.com/zhangdu20080314/Darin-Public-Workspace"
+BASE="https://github.com/DaRin1403/Darin-Public-Workspace"
 URL="$BASE/archive/refs/heads/main.zip"
 TMP="$(mktemp -d /tmp/kaguya-theme-install.XXXXXX)"
 

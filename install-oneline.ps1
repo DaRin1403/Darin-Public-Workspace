@@ -1,14 +1,14 @@
 # ============================================================
 #  Kaguya 液态玻璃皮肤 · 网络一键安装（Windows PowerShell）
 #  由用户在终端粘贴的一条命令下载并执行：
-#    irm https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.ps1 | iex
+#    irm https://raw.githubusercontent.com/DaRin1403/Darin-Public-Workspace/main/install-oneline.ps1 | iex
 #  （国内网络可换用 jsdelivr 镜像：
-#    irm https://cdn.jsdelivr.net/gh/zhangdu20080314/Darin-Public-Workspace@main/install-oneline.ps1 | iex）
+#    irm https://cdn.jsdelivr.net/gh/DaRin1403/Darin-Public-Workspace@main/install-oneline.ps1 | iex）
 #  流程：下载最新仓库 zip → 解压到临时目录 → 执行仓库内「一键安装.ps1」→ 清理。
 # ============================================================
 $ErrorActionPreference = 'Stop'
 
-$base = 'https://github.com/zhangdu20080314/Darin-Public-Workspace'
+$base = 'https://github.com/DaRin1403/Darin-Public-Workspace'
 $url  = "$base/archive/refs/heads/main.zip"
 $tmp  = Join-Path $env:TEMP "kaguya-theme-install"
 $zip  = Join-Path $tmp 'repo.zip'

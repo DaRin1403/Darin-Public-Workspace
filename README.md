@@ -96,16 +96,16 @@ anime-theme-1.1.0\
 **Windows（PowerShell）**：
 
 ```powershell
-irm https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.ps1 | iex
+irm https://raw.githubusercontent.com/DaRin1403/Darin-Public-Workspace/main/install-oneline.ps1 | iex
 ```
 
 **macOS / Linux（终端）**：
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.sh | bash
+curl -fsSL https://raw.githubusercontent.com/DaRin1403/Darin-Public-Workspace/main/install-oneline.sh | bash
 ```
 
-> 国内网络直连 GitHub 困难时，把命令里的 `raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main` 换成 `cdn.jsdelivr.net/gh/zhangdu20080314/Darin-Public-Workspace@main` 即可（脚本本体走镜像；zip 下载仍走 GitHub，若仍失败请用下面的方式 1 手动安装）。
+> 国内网络直连 GitHub 困难时，把命令里的 `raw.githubusercontent.com/DaRin1403/Darin-Public-Workspace/main` 换成 `cdn.jsdelivr.net/gh/DaRin1403/Darin-Public-Workspace@main` 即可（脚本本体走镜像；zip 下载仍走 GitHub，若仍失败请用下面的方式 1 手动安装）。
 
 粘贴回车后脚本自动完成：下载最新仓库 → 解压 → 复制皮肤包 → 合并挂载行（自动备份）→ 提示重启。**最后重启一下 `dsh web`，浏览器打开 http://127.0.0.1:3080（浅色模式）即生效**；以后更新 = 再粘一次这条命令 + F5。
 
