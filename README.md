@@ -93,9 +93,17 @@ anime-theme-1.1.0\
 
 ### 1. 一键安装（推荐）
 
-把整个项目文件夹解压/克隆到任意位置，然后**双击 `一键安装.bat`**（或运行 `一键安装.ps1`）。脚本会自动：
+**Windows**：把整个项目文件夹解压/克隆到任意位置，然后**双击 `一键安装.bat`**。
 
-1. 把 `anime-theme` 皮肤包复制到 `C:\Users\<用户名>\.dsh\profiles\web\node_modules\anime-theme\`（可用 `DSH_HOME` 环境变量指定其它安装位置）；
+**macOS / Linux**：终端进入项目目录，执行：
+
+```sh
+./一键安装.sh
+```
+
+脚本会自动：
+
+1. 把 `anime-theme` 皮肤包复制到 profile 的 `node_modules/anime-theme/`（默认 `~/.dsh/profiles/web/`，可用 `DSH_HOME` 环境变量指定其它安装位置）；
 2. 把挂载行合并进 `cordis.patch.yml`（已存在则跳过，修改前自动备份原文件）；
 3. 提示你重启 `dsh web` → 浏览器打开 http://127.0.0.1:3080（浅色模式）即生效。
 
@@ -103,7 +111,7 @@ anime-theme-1.1.0\
 
 ### 2. 手动安装
 
-把 `anime-theme` 文件夹复制到 profile 的 node_modules：
+把 `anime-theme` 文件夹复制到 profile 的 node_modules（Windows 为 `C:\Users\<用户名>\.dsh\profiles\web\`，macOS/Linux 为 `~/.dsh/profiles/web/`）：
 
 ```
 C:\Users\<用户名>\.dsh\profiles\web\node_modules\anime-theme\

@@ -1,0 +1,4 @@
+# 行尾约定：脚本类文件固定行尾，避免跨平台执行出错
+*.sh  text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
