@@ -91,7 +91,25 @@ anime-theme-1.1.0\
 
 ## 🚀 快速开始
 
-### 1. 一键安装（推荐）
+### 0. 零步安装：复制一条命令到终端（最简单）
+
+**Windows（PowerShell）**：
+
+```powershell
+irm https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.ps1 | iex
+```
+
+**macOS / Linux（终端）**：
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main/install-oneline.sh | bash
+```
+
+> 国内网络直连 GitHub 困难时，把命令里的 `raw.githubusercontent.com/zhangdu20080314/Darin-Public-Workspace/main` 换成 `cdn.jsdelivr.net/gh/zhangdu20080314/Darin-Public-Workspace@main` 即可（脚本本体走镜像；zip 下载仍走 GitHub，若仍失败请用下面的方式 1 手动安装）。
+
+粘贴回车后脚本自动完成：下载最新仓库 → 解压 → 复制皮肤包 → 合并挂载行（自动备份）→ 提示重启。**最后重启一下 `dsh web`，浏览器打开 http://127.0.0.1:3080（浅色模式）即生效**；以后更新 = 再粘一次这条命令 + F5。
+
+### 1. 一键安装（本地脚本）
 
 **Windows**：把整个项目文件夹解压/克隆到任意位置，然后**双击 `一键安装.bat`**。
 
