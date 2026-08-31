@@ -7,7 +7,7 @@
 //   3. 改坏了就改回来，F5 立刻还原，随便折腾。
 //
 // 图片更新方式：
-//   换掉 E:\Deepseek\UI\V1 里的源图后，运行
+//   换掉 E:\AI\Deepseek\UI\V1 里的源图后，运行
 //     node node_modules\anime-theme\scripts\build-skin.cjs
 //   （或在对话里喊 AI 帮你跑），图片会自动压缩并重新内嵌。
 //
@@ -1551,6 +1551,33 @@ window.__ModuleLoader__.load({
       "  backdrop-filter: blur(10px) saturate(155%);",
       "  border-color: rgba(255,255,255,0.6);",
       "  box-shadow: inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(200,80,140,0.12), 0 6px 20px rgba(160,60,120,0.22);",
+      "}",
+      "",
+      "/* ══ 分区：对话区 · 子代理菜单 / 消息表格（浅蓝玻璃） ══ */",
+      "/* 子代理菜单（前缀「7 个子代理」等）：官方 specific-menu 白底 → 浅蓝液态玻璃（与代码块同款配方） */",
+      "body:not([data-ds-dark-theme]) .ZKlsPq_menu {",
+      "  background: linear-gradient(rgba(226,239,254,0.78), rgba(199,222,254,0.55)) !important;",
+      "  -webkit-backdrop-filter: blur(10px) saturate(155%);",
+      "  backdrop-filter: blur(10px) saturate(155%);",
+      "  border: 1px solid rgba(255,255,255,0.6);",
+      "  box-shadow: inset 0 1px 0 rgba(255,255,255,0.85), inset 0 -1px 0 rgba(59,130,246,0.12), 0 6px 20px rgba(59,130,246,0.22);",
+      "}",
+      "body:not([data-ds-dark-theme]) .ZKlsPq_row:hover > .ZKlsPq_clickarea,",
+      "body:not([data-ds-dark-theme]) .ZKlsPq_row:focus-visible > .ZKlsPq_clickarea {",
+      "  background: linear-gradient(rgba(180,208,246,0.55), rgba(160,196,242,0.4)) !important;",
+      "}",
+      "/* 消息内 Markdown 表格：单元格浅蓝玻璃（表头深一档），外框圆角气泡化 */",
+      "body:not([data-ds-dark-theme]) ._tableScroll_1r4m5_174 {",
+      "  border-radius: 10px;",
+      "  overflow: hidden;",
+      "}",
+      "body:not([data-ds-dark-theme]) ._tableScroll_1r4m5_174 th {",
+      "  background: linear-gradient(rgba(206,226,252,0.65), rgba(185,214,249,0.5)) !important;",
+      "  border-bottom: 1px solid rgba(255,255,255,0.75) !important;",
+      "}",
+      "body:not([data-ds-dark-theme]) ._tableScroll_1r4m5_174 td {",
+      "  background: linear-gradient(rgba(226,239,254,0.6), rgba(205,226,252,0.42)) !important;",
+      "  border-bottom: 1px solid rgba(255,255,255,0.55) !important;",
       "}",
       "",
       "/* ══ 分区：第三方插件 · 右边栏 / AgentTeams / 设置新界面 ══ */",
